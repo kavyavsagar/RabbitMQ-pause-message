@@ -1,6 +1,6 @@
 # Advanced Message Queuing Protocol (AMQP) in RabbitMQ
 
-A messaging service that reads incoming messages from a RabbitMQ queue, and sends out SMS and Emails, depending on the message type. System want to pause sending SMS messages during a specified time period, like 6pm to 6am. This time period should be configurable from a settings.php file. Created such a system in PHP, using required technologies/libraries. The constraints are:
+A messaging service that reads incoming messages from a RabbitMQ queue, and sends out SMS and Emails, depending on the message type. System want to pause sending SMS messages during a specified time period, like 6pm to 6am. This time period should be configurable from a settings.php file. Created such a system in PHP, using required technologies/libraries.
 
 - 
 Constraints are:
@@ -14,6 +14,7 @@ c: The emails should continue being sent all day long
 d: Only SMS messages need to be paused in the configured time window
 
 - 
+
 - 
 
 The message formats on the input queue are:
@@ -27,7 +28,6 @@ Email:
   ';html';: ';This is a test email. It can <i>also</i> contain HTML code';
   ';text';: ';This is a test email. It is text only';
 }
-
 
 - 
 
